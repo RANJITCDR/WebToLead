@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEAD FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <img src="NIIT.jpeg" alt="" /> -->
+    <form
+      action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHF000000CQUz"
+      method="POST"
+    >
+      <h1>Lead</h1>
+      <input type="hidden" name="oid" value="00DHF000000CQUz" />
+      <input type="hidden" name="retURL" value="http://google.com" />
+
+      <label for="recordType">Lead Record Type</label>
+      <select id="recordType" name="recordType" required="true">
+        <option value="012C50000004KOq">Learner</option>
+        <option value="012C50000004KP5">Individual/Household</option>
+        <option value="012C50000004KOq">Learner</option>
+        <option value="012C50000004KOv">Organization</option>
+        <option value="012C50000004KP0">Partnership</option></select
+      ><br />
+
+      <label for="first_name">First Name</label>
+      <input
+        required="true"
+        id="first_name"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+      /><br />
+
+      <label for="last_name">Last Name</label
+      ><input
+        required="true"
+        id="last_name"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+      /><br />
+
+      <label for="mobile">Mobile</label
+      ><input
+        required="true"
+        id="mobile"
+        maxlength="40"
+        name="mobile"
+        size="20"
+        type="text"
+      /><br />
+
+      <label for="email">Email</label
+      ><input
+        required="true"
+        id="email"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+      /><br />
+
+      <input class="submit" type="submit" name="submit" />
+    </form>
+  </body>
+</html>
